@@ -7,11 +7,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.Arrays;
 
-public class Main {
-    public static void main(String[] args){
-        ApplicationContext context= new AnnotationConfigApplicationContext(Config.class);
-        SortService sortService = context.getBean(SortService.class);
-
-        System.out.println(sortService.doSort(Arrays.asList(args)));
-    }
-}
+//Spring Web 적용하게되면 무의미 해짐.
+//public class Main {
+//    public static void main(String[] args){
+//        ApplicationContext context= new AnnotationConfigApplicationContext(Config.class);
+//        SortService sortService = context.getBean(SortService.class);
+//
+//        System.out.println(sortService.doSort(Arrays.asList(args)));
+//    }
+//}
